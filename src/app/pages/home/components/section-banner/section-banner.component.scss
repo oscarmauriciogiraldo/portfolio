@@ -1,3 +1,119 @@
-.banner-container{
+.body-banner{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  .banner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 20px;
 
+    background: linear-gradient(135deg, rgba(142, 0, 252, 0.1), rgba(82, 0, 146, 0.1));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(142, 0, 252, 0.18);
+    //box-shadow: 0 0px 32px 0 rgba(153, 23, 255, 1.0);
+    box-shadow: rgba(153, 23, 255, 0.3) 0px 1px 2px 0px, rgba(153, 23, 255, 0.15) 0px 2px 6px 2px;
+    //box-shadow: rgba(153, 23, 255, 1.0) 0px 5px 15px;
+    //box-shadow: rgba(153, 23, 255, 1.0) 0px 3px 8px;
+    //box-shadow: rgba(142, 0, 252, 0.18) 0px 1px 2px 0px, rgba(142, 0, 252, 0.18) 0px 2px 6px 2px;
+    .banner-content{
+      background: orange;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px 10px;
+      transition: all 300ms ease;
+      .greeting,
+      .social-media{
+        display: none;
+      }
+    }
+    .banner-avatar-perfil{
+      //background: yellow;
+      display: flex;
+      width: 100%;
+      height: 480px;
+      padding: 20px 10px;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      transition: all 300ms ease;
+      .greeting{
+        //background: red;
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h3{
+          color: #fff;
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+      .hexagano-image{
+        position: relative;
+        width: 200px;
+        height: 250px;
+        //margin: 0 10px;
+        clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+        background: #B026FF;
+        border-radius: 15px;
+        box-shadow: rgba(153, 23, 255, 0.25) 0px 14px 28px, rgba(153, 23, 255, 0.22) 0px 10px 10px;
+      }
+      .social-media{
+        //background: yellow;
+        display: flex;
+        width: 100%;
+        height: 50px;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 30px;
+        font-weight: 700;
+        color: #B026FF;
+        .icon-border{
+          border: 1px solid #B026FF;
+          padding: 10px;
+          border-radius: 50%;
+        }
+        .fa-github{
+          color: #fff;
+        }
+        .fa-gitlab {
+          color: #e24329;
+        }
+        .fa-linkedin{
+          color: #0077b5;
+        }
+        .fa-square-instagram{
+          color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        }
+        .fa-whatsapp{
+          color: #25d366;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px){
+  .body-banner{
+    .banner-container{
+      .banner-avatar-perfil{
+        .greeting,
+        .social-media{
+          display: none;
+        }
+      }
+    }
+  }
 }
