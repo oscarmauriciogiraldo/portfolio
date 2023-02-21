@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CvComponent } from './pages/cv/cv.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { SectionBannerComponent } from './pages/home/components/section-banner/section-banner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CvComponent
+    CvComponent,
+    HeaderComponent,
+    FooterComponent,
+    SectionBannerComponent
   ],
   imports: [
     BrowserModule,
