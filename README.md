@@ -34,4 +34,4 @@ ng add angular-cli-ghpages
 
 ### deploy - project
 
-ng deploy --base-href=/https://oscarmauriciogiraldo.github.io/portfolio/
+ng deploy --base-href=https://oscarmauriciogiraldo.github.io/portfolio/
