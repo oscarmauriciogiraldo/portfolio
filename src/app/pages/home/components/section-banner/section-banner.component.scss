@@ -106,6 +106,11 @@
       }
       .content-hexagono{
         margin: 20px 0px;
+        //filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+        //filter: drop-shadow(0 6mm 4mm rgba(0, 238, 255, 0.25));
+        filter: drop-shadow(0 7mm 6mm rgba(162, 0, 255, 0.25));
+
+        //box-shadow: rgba(0, 238, 255, 0.25) 0px 54px 55px, rgba(0, 238, 255, 0.12) 0px -12px 30px, rgba(0, 238, 255, 0.12) 0px 4px 6px, rgba(0, 238, 255, 0.17) 0px 12px 13px, rgba(0, 238, 255, 0.09) 0px -3px 5px;
         .hexagano-image{
           position: relative;
           width: 200px;
@@ -118,7 +123,9 @@
           align-items: center; */
           //margin: 0 10px;
           clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
-          background: #B026FF;
+          //background: #B026FF;
+          //background: #00EEFF;
+          background: #A200FF ;
           //border-radius: 20% 20%;
           //box-shadow: rgba(153, 23, 255, 0.25) 0px 14px 28px, rgba(153, 23, 255, 0.22) 0px 10px 10px;
           img{
@@ -126,10 +133,10 @@
             position: absolute;
             bottom: 0;
             //left: 0;
-            width: 90%;
+            width: 100%;
             object-fit: cover;
             transition: 0.5s ease-in-out;
-            transform-origin: bottom;
+            //transform-origin: bottom;
           }
         }
       }
@@ -152,23 +159,25 @@
           padding: 10px;
           border-radius: 50%;
           cursor: pointer;
-        }
-        .fa-github{
-          color: #fff;
-        }
-        .fa-gitlab {
-          color: #e24329;
-        }
-        .fa-linkedin{
-          color: #0077b5;
-        }
-        .fa-square-instagram{
-          //background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-          color: #dd2a7b;
+          text-decoration: none;
+          .fa-github{
+            color: #fff;
+          }
+          .fa-gitlab {
+            color: #e24329;
+          }
+          .fa-linkedin{
+            color: #0077b5;
+          }
+          .fa-square-instagram{
+            //background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+            color: #dd2a7b;
 
-        }
-        .fa-whatsapp{
-          color: #25d366;
+          }
+          .fa-whatsapp{
+            color: #25d366;
+          }
+
         }
         .icon-border{
           .fa-instagram{
