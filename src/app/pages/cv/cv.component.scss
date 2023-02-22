@@ -169,6 +169,8 @@
               font-weight: 600;
               text-decoration: none;
               a{
+                color: #848c90;
+                font-weight: 800;
                 list-style: none;
                 text-decoration: none;
               }
@@ -238,229 +240,7 @@
       }
     }
   }
-
-  /* .container */
-
-/* .porfileProfesional{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-
-} */
-
-/* .porfileProfesional .imgBx{
-    position: relative;
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
-    overflow: hidden;
-} */
-
-/* .porfileProfesional .imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
-
-/* .porfileProfesional h2 {
-    color: #fff;
-    font-size: 1.5em;
-    margin-top: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 600;
-    line-height: 1.4em;
-} */
-
-/* Tarjeta Profesional */
-/* .porfileProfesional h5 {
-    color: #fff;
-    font-size: 1em;
-    margin-top: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 200;
-    line-height: 1.4em;
-} */
-
-/* Tarjeta Profesional */
-
-/* .porfileProfesional h2 span{
-    font-size: 0.8em;
-    font-weight: 300;
-} */
-
-/* .contacInfo-perfilProfesional{
-    padding-top: 40px;
-} */
-
-/* .title{
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-} */
-
-/* .contacInfo-perfilProfesional ul{
-    position: relative;
-} */
-
-/* .contacInfo-perfilProfesional ul li{
-    position: relative;
-    list-style: none;
-    margin: 10px 0;
-    cursor: pointer;
-} */
-
-/* .contacInfo-perfilProfesional ul li .icon{
-    display: inline-block;
-    width: 30px;
-    font-size: 18px;
-    color: #03a9f4;
-} */
-
-/* .contacInfo-perfilProfesional ul li span{
-    color: #fff;
-    font-weight: 300;
-} */
-
-/* .contacInfo-perfilProfesional.education li{
-    margin-bottom: 15px;
-} */
-
-/* .contacInfo-perfilProfesional.education h5{
-    color: aliceblue;
-    font-weight: 500;
-} */
-
-/* .contacInfo-perfilProfesional.education h4:nth-child(2){
-    color: #fff;
-    font-weight: 500;
-} */
-
-/* .contacInfo-perfilProfesional.education h4{
-    color: #fff;
-    font-weight: 300;
-} */
-
-/* .contacInfo-perfilProfesional.language .percent{
-    position: relative;
-    width: 100%;
-    height: 6px;
-    background: #081921;
-    display: block;
-    margin-top: 5px;
-} */
-
-/* .contacInfo-perfilProfesional.language .percent div{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #03a9f4;
-} */
-
-/* .container .right_side{
-    position: relative;
-    background: #fff;
-    padding: 40px;
-} */
-
-/*About*/
-
-/* .about{
-    margin-bottom: 50px;
-} */
-
-/* .about:last-child{
-    margin-bottom: 0;
-} */
-
-/* .title2{
-    color: #003147;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-
-} */
-
-/* p{
-    color: #333;
-} */
-
-/* Experiencia laboral */
-/* .about .box {
-    display: flex;
-    flex-direction: row;
-    margin: 20px 0;
-} */
-
-/* .about .box .year_company{
-    min-width: 150px;
-} */
-
-/* .about .box .year_company h5{
-    text-transform: uppercase;
-    color: #848c90;
-    font-weight: 600;
-} */
-
-/* .about .box .text h4 {
-    text-transform: uppercase;
-    color: #2a7da2;
-    font-size: 16px;
-} */
-
-/* .skills .box {
-    position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* .skills .box h4{
-   text-transform: uppercase;
-   color: #848c99;
-   font-weight: 500;
-} */
-
-/* .skills .box .percent{
-    position: relative;
-    width: 100%;
-    height: 10px;
-    background: #f0f0f0;
-} */
-
-/* .skills .box .percent div{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #003147;
-} */
-
-/* .interest ul{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-} */
-
-/* .interest ul li{
-    list-style: none;
-    color: #333;
-    font-weight: 500;
-    margin: 10px 0;
-} */
-
-/* media querys responsive */
+  /* media querys responsive */
   @media (max-width: 1000px) {
     /* .body-cv{
       .container{
@@ -504,14 +284,41 @@
       }
     } */
 
-    .about .column{
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      //align-items: center;
-      flex-direction: column;
-      background: yellow;
+    .container{
+      .right_side{
+        .laboral{
+          .column{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            //align-items: center;
+            flex-direction: column;
+            //background: yellow;
+            .year_company{
+              padding: 10px 0px;
+              //background: red;
+              text-align: start;
+              h5{
+                font-size: 18px;
+              }
+            }
+            .text{
+              h4{
+                //background: orange;
+                padding: 10px 0px
+              }
+              p{
+                text-transform: capitalize;
+              }
+            }
+          }
+        }
+      }
     }
+
+    /* .about .column{
+
+    } */
 
     /* .abouot .box{
       flex-direction: column;
