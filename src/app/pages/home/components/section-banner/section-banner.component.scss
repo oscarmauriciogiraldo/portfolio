@@ -110,15 +110,27 @@
           position: relative;
           width: 200px;
           height: 250px;
-          object-fit: contain;
+          overflow: hidden;
+          cursor: pointer;
+          /*object-fit: contain;
           display: flex;
           justify-content: center;
-          align-items: center;
+          align-items: center; */
           //margin: 0 10px;
           clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
           background: #B026FF;
           //border-radius: 20% 20%;
           //box-shadow: rgba(153, 23, 255, 0.25) 0px 14px 28px, rgba(153, 23, 255, 0.22) 0px 10px 10px;
+          img{
+            //width: 70%;
+            position: absolute;
+            bottom: 0;
+            //left: 0;
+            width: 90%;
+            object-fit: cover;
+            transition: 0.5s ease-in-out;
+            transform-origin: bottom;
+          }
         }
       }
       .social-media{
