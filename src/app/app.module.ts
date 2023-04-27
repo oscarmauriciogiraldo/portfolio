@@ -8,6 +8,7 @@ import { CvComponent } from './pages/cv/cv.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SectionBannerComponent } from './pages/home/components/section-banner/section-banner.component';
+import { BabyShowerComponent } from './pages/baby-shower/baby-shower.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SectionBannerComponent } from './pages/home/components/section-banner/s
     CvComponent,
     HeaderComponent,
     FooterComponent,
-    SectionBannerComponent
+    SectionBannerComponent,
+    BabyShowerComponent
   ],
   imports: [
     BrowserModule,
