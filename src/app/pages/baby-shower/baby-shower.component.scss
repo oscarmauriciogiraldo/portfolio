@@ -4,33 +4,186 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
-  //padding: 10px;
-  //background: pink;
+  background: linear-gradient(rgba(224, 150, 155, 0.4), rgba(203, 169, 177, 0.4)), url(../../../assets/img/card/back2.jpeg);
+  //linear-gradient(rgba(224, 150, 155, 0.8), rgba(203, 169, 177, 0.8)),
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   .cardBabyShower{
     display: flex;
     width: 100%;
     height: 100vh;
-    flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    background:  linear-gradient(rgba(224, 150, 155, 0.8), rgba(203, 169, 177, 0.8)), url(../../../assets/img/card/back2.jpeg);
-    //background-image: url(../../../assets/img/card/cardBackground.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    //background-color: rgba(224, 150, 155, 1);
-    //background-color: linear-gradient(#e66465, #9198e5);
-    //background-size: 50%;
-    //backdrop-filter: blur(20px);
+    justify-content: center;
+
     .card-content{
-      background: white;
-      padding: 5px 10px;
-      h1{
-        font-family: 'Dancing Script', cursive;
-        font-size: 40px;
-        text-align: start;
-        margin: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      //linear-gradient(rgba(224, 150, 155, 0.8), rgba(203, 169, 177, 0.8))
+      background: rgba(255, 255, 255, 0.6);
+      //padding: 1.5em;
+      position: relative;
+      overflow: hidden;
+      width: 90%;
+      height: 90vh;
+      backdrop-filter: blur(15px);
+      border-radius: 50px;
+      border: solid 6px #bb575e;
+      //clip-path: polygon(0 100%, 50% 98%, 100% 100%, 96% 51%, 100% 0, 50% 4%, 0 0, 4% 53%);
+
+      .container-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 0px;
+        width: 85%;
+        //background: red;
+
+        h3{
+          font-size: 25px;
+          text-align: center;
+          color: #5F494B;
+          font-style: italic;
+
+          font-family: 'Noto Serif TC', serif;
+        }
+
+        h1{
+          font-family: 'Dancing Script', cursive;
+          font-size: 50px;
+          text-align: start;
+          margin: 30px;
+          border-bottom: solid 3px #bb575e;
+          color: #bb575e;
+          width: 300px;
+          text-align: center;
+        }
       }
+
+      .container-fecha{
+        display: flex;
+        width: 85%;
+        height: 100px;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: solid 3px #bd7479;
+        //background: yellow;
+        margin-bottom: 20px;
+        .fecha{
+          display: flex;
+          width: 70%;
+          justify-content: center;
+          align-items: center;
+          border-right: solid 3px #bd7479;
+          padding: 10px 0px;
+          p{
+            font-size: 20px;
+            color: #5F494B;
+            font-weight: 800;
+          }
+        }
+        .hora{
+          display: flex;
+          width: 30%;
+          justify-content: center;
+          align-items: center;
+          padding: 10px 0px;
+          p{
+            font-size: 20px;
+            color: #5F494B;
+            font-weight: 800;
+
+          }
+        }
+      }
+
+      .ubicacion{
+        display: flex;
+        width: 85%;
+        //height: 100px;
+        justify-content: space-around;
+        align-items: center;
+        //border-bottom: solid 3px #bd7479;
+        //background: yellow;
+        margin-bottom: 20px;
+        .rose,
+        .contentUbicacion{
+          display: flex;
+          width: 50%;
+          justify-content: center;
+          align-items: center;
+        }
+        .contentUbicacion{
+          p{
+            font-size: 20px;
+            color: #5F494B;
+            font-weight: 800;
+
+          }
+        }
+      }
+
+      .container-button{
+        display: flex;
+        width: 85%;
+        //background: orange;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        p{
+          font-size: 20px;
+          color: #5F494B;
+          font-weight: 800;
+          text-align: center;
+          margin: 15px 0px;
+        }
+        a.button{
+          display: flex;
+          width: 200px;
+          height: 50px;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          border-radius: 30px;
+          background: #bb575e;
+          //color: #5F494B;
+          color: #fff;
+          font-style: italic;
+
+          font-family: 'Noto Serif TC', serif;
+          font-size: 30px;
+        }
+        p.span{
+          font-size: 18px;
+          color: #5F494B;
+          font-weight: 600;
+          font-style: italic;
+          text-align: center;
+          margin: 15px 0px;
+        }
+      }
+
+      /* .card-title{
+        position: relative;
+        //width: max-content;
+        &::after{
+          content: "";
+          position: absolute;
+          height: 4px;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background: red;
+        }
+      } */
+
+
       p{
         text-align: start;
       }
@@ -39,5 +192,12 @@
   }
 }
 
-
-
+@media screen and (min-width: 800px){
+  .container{
+    .cardBabyShower{
+      border-radius: 25px;
+      max-width: 500px;
+      max-height: 650px;
+    }
+  }
+}
