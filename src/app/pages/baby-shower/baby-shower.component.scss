@@ -45,19 +45,20 @@
 
     .container-title{
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       flex-direction: column;
       padding: 10px 0px;
-      width: 90%;
+      width: 95%;
+      height: 160px;
       background: red;
 
       h3{
         font-size: 25px;
         text-align: center;
+        width: 100%;
         color: #5F494B;
         font-style: italic;
-
         font-family: 'Noto Serif TC', serif;
       }
 
@@ -73,15 +74,15 @@
         color: #fff;
         width: 300px;
         text-align: center;
-        border-top-left-radius: 50px;
-        border-bottom-right-radius: 50px;
+        border-top-left-radius: 70px;
+        border-bottom-right-radius: 70px;
       }
     }
 
     .container-fecha{
       display: flex;
       width: 90%;
-      //height: 100px;
+      height: 100px;
       justify-content: space-around;
       align-items: center;
       border-bottom: solid 3px #bd7479;
@@ -90,7 +91,7 @@
       .fecha{
         display: flex;
         width: 70%;
-        height: 120px;
+        height: 100%;
         justify-content: space-around;
         align-items: center;
         border-right: solid 3px #bd7479;
@@ -98,7 +99,7 @@
         flex-direction: column;
         //background: orange;
         .fa-calendar-days{
-          font-size: 40px;
+          font-size: 30px;
           color: #8ba283;
           font-weight: 800;
           text-align: center;
@@ -113,13 +114,13 @@
       .hora{
         display: flex;
         width: 30%;
-        height: 120px;
+        height: 100%;
         justify-content: space-around;
         align-items: center;
         padding: 5px;
         flex-direction: column;
         .pi-clock{
-          font-size: 40px;
+          font-size: 30px;
           color: #8ba283;
           font-weight: 800;
           text-align: center;
@@ -136,8 +137,8 @@
 
     .ubicacion{
       display: flex;
-      width: 95%;
-      //height: 100px;
+      width: 100%;
+      height: 130px;
       justify-content: space-around;
       align-items: center;
       //border-bottom: solid 3px #bd7479;
@@ -147,7 +148,7 @@
       .contentUbicacion{
         display: flex;
         width: 50%;
-        height: 140px;
+        height: 100%;
         justify-content: center;
         align-items: center;
       }
