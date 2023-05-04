@@ -88,6 +88,7 @@
       border-bottom: solid 3px #bd7479;
       //background: yellow;
       //margin-bottom: 20px;
+      padding-bottom: 10px;
       .fecha{
         display: flex;
         width: 70%;
@@ -199,53 +200,80 @@
 
     .container-button{
       display: flex;
-      width: 85%;
-      background: green;
+      width: 100%;
+      //background: green;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       padding: 10px;
-      p{
-        font-size: 18px;
-        color: #5F494B;
-        font-weight: 800;
-        text-align: center;
-        margin: 15px 0px;
-        font-style: italic;
+      .text{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        //background: yellow;
+        padding: 5px 0px;
+        p{
+          font-size: 18px;
+          color: #5F494B;
+          font-weight: 800;
+          text-align: center;
+          //margin: 15px 0px;
+          font-style: italic;
+        }
+      }
+      .asistencia{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        //background: orange;
+        padding: 5px 0px;
+        p.span{
+          font-size: 18px;
+          color: #5F494B;
+          font-weight: 600;
+          font-style: italic;
+          text-align: center;
+          margin: 15px 0px;
+        }
       }
 
       .pi-chevron-down{
-        font-size: 40px;
+        font-size: 30px;
         color: #8ba283;
         font-weight: 800;
         text-align: center;
       }
 
-      a.button{
+      .buttonAsistencia{
         display: flex;
-        width: 230px;
-        height: 50px;
-        text-align: center;
-        align-items: center;
+        width: 100%;
         justify-content: center;
-        text-decoration: none;
-        border-radius: 30px;
-        background: #bb575e;
-        //color: #5F494B;
-        color: #fff;
-        font-style: italic;
-        margin: 10px 0px;
-        font-family: 'Noto Serif TC', serif;
-        font-size: 30px;
+        align-items: center;
+        //background: yellowgreen;
+        padding: 5px 0px;
+        a.button{
+          display: flex;
+          width: 230px;
+          height: 50px;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          border-radius: 30px;
+          background: #bb575e;
+          //color: #5F494B;
+          color: #fff;
+          font-style: italic;
+          margin: 10px 0px;
+          font-family: 'Noto Serif TC', serif;
+          font-size: 30px;
+        }
       }
-      p.span{
-        font-size: 18px;
-        color: #5F494B;
-        font-weight: 600;
-        font-style: italic;
-        text-align: center;
-        margin: 15px 0px;
-      }
+
+
+
     }
 
     /* .card-title{
