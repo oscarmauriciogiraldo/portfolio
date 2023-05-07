@@ -27,7 +27,8 @@
 
     <div class="ubicacion">
       <div class="rose">
-        <img src="" alt="">
+        <!-- <img src="../../../assets/img/card/pan2-removebg-preview.png" alt=""> -->
+        <img src="../../../assets/img/card/osito.png">
       </div>
       <div class="contentUbicacion">
         <div class="localization">
@@ -38,6 +39,7 @@
           </a>
         </div>
         <div class="note">
+          <i class="fa-solid fa-gift"></i>
           <p>
             Regalo opcional
           </p>
@@ -58,24 +60,40 @@
 
     <div class="container-button">
 
-      <div class="text">
+      <!-- <div class="text">
         <p>
           NO FALTES, MIS PAPITOS Y YO ESTAREMOS CONTENTOS Y AGRADECIDOS CON TU ACOMPAÑAMIENTO
         </p>
-      </div>
+      </div> -->
 
-      <div class="asistencia">
-        <p class="span">
-          Confirma tú asisitencia
-        </p>
-      </div>
+      <div class="containerButtonForm">
 
-      <i class="pi pi-chevron-down"></i>
+        <div class="containerAsistencia">
+          <div class="asistencia">
+            <p class="span">
+              Confirma tu asistencia
+            </p>
+          </div>
 
-      <div class="buttonAsistencia">
-        <a href="" class="button">
-          ¿Asistirás?
-        </a>
+          <button class="buttonIcon" (click)="toggleDropDownMenu()">
+            <i class="pi pi-angle-up" [class.active]="showDropDown"></i>
+          </button>
+
+
+        </div>
+
+        <div class="buttonAsistencia" [class.active]="showDropDown">
+
+          <div class="text">
+            <p>
+              NO FALTES, MIS PAPITOS Y YO ESTAREMOS CONTENTOS Y AGRADECIDOS CON TU ACOMPAÑAMIENTO
+            </p>
+          </div>
+
+          <a href="" class="button">
+            ¿Asistirás?
+          </a>
+        </div>
       </div>
 
     </div>
