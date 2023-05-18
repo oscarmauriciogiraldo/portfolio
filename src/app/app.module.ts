@@ -10,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SectionBannerComponent } from './pages/home/components/section-banner/section-banner.component';
 import { BabyShowerComponent } from './pages/baby-shower/baby-shower.component';
 import { SkillsComponent } from './pages/home/components/skills/skills.component';
+import { ProjectsComponent } from './pages/home/components/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SkillsComponent } from './pages/home/components/skills/skills.component
     FooterComponent,
     SectionBannerComponent,
     BabyShowerComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
