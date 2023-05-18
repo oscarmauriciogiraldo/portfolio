@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SectionBannerComponent } from './pages/home/components/section-banner/section-banner.component';
 import { BabyShowerComponent } from './pages/baby-shower/baby-shower.component';
+import { SkillsComponent } from './pages/home/components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BabyShowerComponent } from './pages/baby-shower/baby-shower.component';
     HeaderComponent,
     FooterComponent,
     SectionBannerComponent,
-    BabyShowerComponent
+    BabyShowerComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

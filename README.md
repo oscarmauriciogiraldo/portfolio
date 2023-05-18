@@ -26,12 +26,83 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-## Deploy
 
-install ghpages
+## Install Project
 
-ng add angular-cli-ghpages
+  - npm install / npm i
 
-### deploy - project
 
-ng deploy --base-href=https://oscarmauriciogiraldo.github.io/portfolio/
+# Deploy
+## Install Github Pages
+
+  ### install ghpages
+
+  - ng add angular-cli-ghpages
+  ### deploy - project
+
+  ng deploy --base-href=https://oscarmauriciogiraldo.github.io/portfolio/
+
+## Install Fontawesome
+
+  - npm install --save @fortawesome/fontawesome-free
+
+  ### Configure Fontawesome Styles
+
+  Angular.Json
+
+  - "styles": [
+    "src/styles.scss",
+    "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+  ],
+
+  - "scripts": [
+    "node_modules/@fortawesome/fontawesome-free/js/all.min.js"
+  ]
+
+## Install AOS Library Animations Scroll
+
+  #### Oficial Page
+
+    - https://michalsnik.github.io/aos/
+
+  #### Documentation
+
+    - https://github.com/michalsnik/aos
+
+    - npm install --save aos@next
+
+  #### Types Aos
+
+    - npm i -save-dev @types/aos
+
+  ### Implements Aos Library 
+
+  ##### Angular.json
+
+    - "styles": [
+        "./node_modules/aos/dist/aos.css"
+      ],
+
+  #### Imports in component 
+
+    - import * as Aos from 'aos';
+
+    ngOnInit(): void {
+      Aos.init();
+    }
+
+  ##### Set animation using data-aos attribute:
+
+  - <div data-aos="fade-in"></div>
+
+  -  <div
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
+      </div>
