@@ -93,16 +93,22 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
   ##### Set animation using data-aos attribute:
 
-  - <div data-aos="fade-in"></div>
+  - {<div data-aos="fade-in"></div>}
+  - data-aos="fade-up"
+  - data-aos-offset="200"
+  - data-aos-delay="50"
+  - data-aos-duration="1000"
+  - data-aos-easing="ease-in-out"
+  - data-aos-mirror="true"
+  - data-aos-once="false"
+  - data-aos-anchor-placement="top-center"
 
-  -  <div
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-center"
-      >
-      </div>
+## Instalation Ngx-traslate
+
+  ### Documentation
+
+  ### Install
+      
+    - npm install @ngx-translate/core --save
+
+    - npm install @ngx-translate/core@14.0.0  --save
