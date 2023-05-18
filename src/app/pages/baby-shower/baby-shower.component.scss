@@ -41,6 +41,7 @@
     border-radius: 50px;
     border: solid 6px #bb575e;
     padding: 10px 0px;
+    overflow: hidden;
     //clip-path: polygon(0 100%, 50% 98%, 100% 100%, 96% 51%, 100% 0, 50% 4%, 0 0, 4% 53%);
 
     .container-title{
@@ -139,11 +140,11 @@
     .ubicacion{
       display: flex;
       width: 100%;
-      height: 140px;
+      //height: 140px;
       justify-content: space-around;
       align-items: center;
       //border-bottom: solid 3px #bd7479;
-      //background: orange;
+      //background: purple;
       //margin-bottom: 5px;
       .rose,
       .contentUbicacion{
@@ -185,8 +186,16 @@
           //background: yellow;
           justify-content: flex-start;
           align-items: center;
+          .fa-gift{
+            font-size: 30px;
+            color: #8ba283;
+            font-weight: 800;
+            text-align: center;
+            padding: 6px;
+            margin-right: 2px;
+          }
           p{
-            width: 100%;
+            //width: 100%;
             font-size: 18px;
             color: #5F494B;
             font-weight: 800;
@@ -205,7 +214,9 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      padding: 10px;
+      padding: 5px;
+      position: relative;
+      bottom: 0;
       .text{
         display: flex;
         width: 100%;
@@ -222,53 +233,101 @@
           font-style: italic;
         }
       }
-      .asistencia{
+
+      .containerButtonForm{
         display: flex;
         width: 100%;
-        justify-content: center;
+        //max-height: 100px;
+        justify-content: flex-end;
         align-items: center;
-        //background: orange;
-        padding: 5px 0px;
-        p.span{
-          font-size: 18px;
-          color: #5F494B;
-          font-weight: 600;
-          font-style: italic;
-          text-align: center;
-          margin: 15px 0px;
-        }
-      }
-
-      .pi-chevron-down{
-        font-size: 30px;
-        color: #8ba283;
-        font-weight: 800;
-        text-align: center;
-      }
-
-      .buttonAsistencia{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        //background: yellowgreen;
-        padding: 5px 0px;
-        a.button{
+        flex-direction: column;
+        //padding: 5px;
+        //background: yellow;
+        transition: all 300ms ease;
+        /* &.active{
+          max-height: 350px;
+          //background: red;
+        } */
+        .containerAsistencia{
           display: flex;
-          width: 230px;
-          height: 50px;
-          text-align: center;
+          //background: orange;
+          width: 100%;
+          flex-direction: column;
           align-items: center;
           justify-content: center;
-          text-decoration: none;
-          border-radius: 30px;
-          background: #bb575e;
-          //color: #5F494B;
-          color: #fff;
-          font-style: italic;
-          margin: 10px 0px;
-          font-family: 'Noto Serif TC', serif;
-          font-size: 30px;
+          .asistencia{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            //background: red;
+            //padding: 5px 0px;
+            p.span{
+              font-size: 18px;
+              color: #5F494B;
+              font-weight: 600;
+              font-style: italic;
+              text-align: center;
+              margin: 15px 0px;
+            }
+          }
+
+          .buttonIcon{
+
+            display: flex;
+            //background: purple;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            align-items: center;
+            border: none;
+            justify-content: center;transition: all 300ms ease;
+
+            .pi-angle-up{
+              font-size: 30px;
+              color: #8ba283;
+              font-weight: 800;
+              text-align: center;
+              transition: all 0.4s ease;
+              &.active{
+                transform: rotate(180deg);
+              }
+            }
+          }
+        }
+
+        .buttonAsistencia{
+          display: flex;
+          width: 100%;
+          max-height: 0px;
+          overflow: hidden;
+          justify-content: center;
+          align-items: center;
+          //background: yellowgreen;
+          //padding: 5px 0px;
+          transition: all 0.4s ease;
+          flex-direction: column;
+          &.active{
+            max-height: 570px;
+            //background: blue;
+          }
+          a.button{
+            display: flex;
+            width: 230px;
+            height: 50px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 30px;
+            background: #bb575e;
+            //color: #5F494B;
+            color: #fff;
+            font-style: italic;
+            margin: 10px 0px;
+            font-family: 'Noto Serif TC', serif;
+            font-size: 30px;
+          }
         }
       }
 

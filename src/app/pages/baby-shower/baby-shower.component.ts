@@ -10,6 +10,6 @@ export class BabyShowerComponent {
   showDropDown = false;
 
   toggleDropDownMenu(){
-    this.showDropDown = !this.showDropDown
+    this.showDropDown = !this.showDropDown;
   }
 }
