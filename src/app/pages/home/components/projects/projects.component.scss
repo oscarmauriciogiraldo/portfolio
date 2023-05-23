@@ -1,6 +1,6 @@
 .projecCard{
   position: relative;
-  width: 300px;
+  width: 350px;
   height: 220px;
   background: #fff;
   border-radius: 20px;
@@ -11,10 +11,11 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: blur(2px);
+
     &:hover{
       cursor: pointer;
-      filter: blur(0px);
+      //filter: blur(0px);
+      filter: blur(2px);
     }
   }
   &::before{
@@ -23,7 +24,8 @@
     bottom: 0;
     width: 100%;
     height: 30%;
-    background: linear-gradient(0deg, #fff 50%, transparent);
+    //background: linear-gradient(0deg, #fff 50%, transparent);
+    background: var(--background-gradient);
     transition: 0.5s;
     z-index: 1;
   }

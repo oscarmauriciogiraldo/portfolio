@@ -1,6 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "primeicons/primeicons.css";
 
+:root{
+  --dark-base-color: #0b0c10;
+  --dark-grey: #1f2833;
+  --light-grey: #c5c6c7;
+  --base-primary-color: #06071a;
+  --base-second-color: #0b0a11;
+  --base-contrast-primary-color: #59d788;
+  --alternative-primary-color: #9b79ea;
+  --alternative-second-color: #f6412c;
+  --alternative-three-color: #25b8e9;
+
+  /* light Color Palette  */
+  --font-color-light: #d9ecf2;
+  --font-color: #fff;
+
+  /* blue color palette */
+  --base-blue: #296EEB;
+  --base-blue-1: #0d0551;
+  --blue1: #00e5bc;
+  --blue2: #01989f;
+  --blue3: #01679c;
+  --blue-purple: #2a356d;
+  --blue-purple2: #170c24;
+  --blue-dark: #00284c;
+
+  /* gradients */
+  --background-gradient: linear-gradient(135deg, rgba(142, 0, 252, 1), rgba(82, 0, 146, 1));
+  --base-background-gradient: linear-gradient(135deg, hsla(219, 83%, 54%, 1) 0%, hsla(246, 88%, 17%, 1) 100%);
+
+  --base-background-gradient-1: linear-gradient(135deg, hsla(142, 61%, 60%, 1) 0%, hsla(189, 100%, 14%, 1) 100%);
+  --base-background-gradient-3: linear-gradient(135deg, hsla(340, 100%, 61%, 1) 0%, hsla(246, 88%, 17%, 1) 100%);
+  //--base-background-gradient: linear-gradient(180deg, rgba(89,215,136,1) 0%, rgba(0,229,188,1) 37%, rgba(1,152,159,1) 100%);
+  //--base-background-gradient: linear-gradient(180deg, rgba(89,215,136,1) 0%, rgba(0,229,188,1) 37%, rgba(1,152,159,1) 100%);
+  //--base-background-gradient: linear-gradient(180deg, rgba(233,78,118,1) 0%, rgba(49,99,212,1) 72%);
+  --base-background-gradient-2: linear-gradient(180deg, rgba(128,32,36,0.1) 0%, rgba(81,35,48,0.1) 100%);
+  /* light neon
+  #60e3d5
+  #0567a8
+  #f6f0f0 */
+
+  /* ### FONTS ### */
+  --font-family: 'Figtree', sans-serif;
+  /* font-family: 'Figtree', sans-serif;
+  font-family: 'Allura', cursive;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Parisienne', cursive; */
+}
 
 * {
   margin: 0;
@@ -10,5 +59,6 @@
 }
 
 body{
-  background: #1f242d;
+  /* background: #1f242d; */
+  background: var(--base-primary-color);
 }
