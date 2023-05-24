@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
 
+  showDescription = false;
+
+  toggleButton(){
+    this.showDescription = !this.showDescription;
+  }
+
 }

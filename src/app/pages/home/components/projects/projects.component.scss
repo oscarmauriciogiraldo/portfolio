@@ -1,167 +1,329 @@
-.container{
+.projectContainer{
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  /* alineacion vertical */
+  justify-content: center;
+  /* alineacion horizontal */
   align-items: center;
-  flex-wrap: wrap;
-  //margin: 20px;
-  padding: 20px 40px;
-  position: relative;
-  width: 1000px;
-  background: yellow;
-  .cardDinamic{
+  .container{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    //margin: 20px;
+    padding: 20px 40px;
     position: relative;
-    width: 320px;
-    height: 220px;
-    //background: #fff;
-    background: green;
-    margin: 30px 0px;
-    border-radius: 20px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    .projecCard{
-      position: absolute;
-      background: orange;
-      /* top: 10px;
-      left: 10px;
-      height: calc(100% - 20px);
-      width: calc(100% - 20px);*/
-      width: 100%;
-      height: 100%;
-      z-index: 1;
+    width: 1000px;
+    //background: yellow;
+    //overflow: hidden;
+    .cardDinamic{
       display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
+      position: relative;
+      width: 320px;
+      height: 220px;
+      //background: #fff;
+      //background: green;
+      background: var(--base-background-gradient-1);
+      margin: 30px 0px;
       border-radius: 20px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      transition: all 0.5s ease-in-out;
-      /* ******** card 1 ********* */
-      .posterdProject{
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
-        position: relative;
-        overflow: hidden;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+      //overflow: hidden;
+      .projecCard{
+        position: absolute;
+        //background: orange;
+        /* top: 10px;
+        left: 10px;
+        height: calc(100% - 20px);
+        width: calc(100% - 20px);*/
         width: 100%;
         height: 100%;
-        /* width: 350px;
-        height: 220px; */
-        img{
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all 0.5s ease-in-out;
+        &.active{
+          height: calc(50% - 20px);
+          width: calc(70% - 20px);
+          left: 18%;
+          top: -50px;
+          /* height: 100px;
+          width: 150px; */
+          /*  left: 75px;
+          top: calc(50% - 60px); */
+          transition:all 300ms ease;
+          .posterdProject{
+            img{
+              filter: blur(0px);
+            }
+            &::before{
+              display: none;
+            }
+          }
+          .detailCard{
+            transition: 0.5s;
+            display: none;
+          }
+          .closeButton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 5px;
+            position: absolute;
+            width: 100%;
+            bottom: -10px;
+            z-index: 3;
+            //background: orange;
+            transition: all 0.5s ease;
+            button.close{
+              display: flex;
+              border: none;
+              background: var(--base-contrast-primary-color);
+              color: var(--dark-grey);
+              border-radius: 50%;
+              padding: 10px;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              font-size: 20px;
+              font-weight: 600;
+              cursor: pointer;
+            }
+          }
+        }
+        /* ******** card 1 ********* */
+        .posterdProject{
+          /* display: flex;
+          justify-content: center;
+          align-items: center; */
+          position: relative;
+          overflow: hidden;
           width: 100%;
           height: 100%;
-          object-fit: cover;
-          filter: blur(2px);
-          /* &:hover{
-            cursor: pointer;
-            //filter: blur(0px);
+          /* width: 350px;
+          height: 220px; */
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             filter: blur(2px);
+            /* &:hover{
+              cursor: pointer;
+              //filter: blur(0px);
+              filter: blur(2px);
+            } */
+          }
+
+          &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60%;
+            background: linear-gradient(0deg, #520092 30%, transparent);
+            //background: var(--background-gradient);
+            transition: 0.5s;
+            z-index: 1;
+          }
+        }
+
+        .detailCard{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          padding: 10px 5px;
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+          z-index: 2;
+          //background: orange;
+          transition: all 0.5s ease;
+          .visit{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 5px;
+            //background: orange;
+            button{
+              border: none;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              /* width: 120px;
+              height: 40px; */
+              padding: 5px 15px;
+              color: var(--dark-grey);
+              background: var(--base-contrast-primary-color);
+              border-radius: 10px;
+              font-size: 15px;
+              text-align: center;
+              font-weight: 700;
+              cursor: pointer;
+            }
+          }
+          .title{
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 0px;
+            color: var(--font-color-light);
+            padding: 10px;
+            //background: yellow;
+            h1{
+              border-bottom: solid 1px var(--font-color-light);
+              font-size: 25px;
+            }
+          }
+          .detail{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            padding: 5px;
+            //background: green;
+            button{
+              border: none;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              /* width: 120px;
+              height: 40px; */
+              padding: 5px 10px;
+              color: var(--dark-grey);
+              background: var(--base-contrast-primary-color);
+              border-radius: 10px;
+              font-size: 15px;
+              text-align: center;
+              font-weight: 700;
+              cursor: pointer;
+            }
+          }
+
+        }
+        .closeButton{
+          display: none;
+          /* display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px 5px;
+          position: absolute;
+          width: 100%;
+          bottom: -10px;
+          z-index: 3;
+          //background: orange;
+          transition: all 0.5s ease; */
+          /* button.close{
+            display: flex;
+            border: none;
+            background: var(--base-contrast-primary-color);
+            color: var(--dark-grey);
+            border-radius: 50%;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
           } */
         }
-
-        &::before{
-          content: '';
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          height: 60%;
-          background: linear-gradient(0deg, #520092 30%, transparent);
-          //background: var(--background-gradient);
-          transition: 0.5s;
-          z-index: 1;
-        }
+        /* ******** card 1 ********* */
       }
+      /* &:hover .projecCard{
+        height: calc(50% - 20px);
+        width: calc(70% - 20px);
+        left: 18%;
+        top: -50px;
+        //height: 100px;
+        //width: 150px;
+        //left: 75px;
+        //top: calc(50% - 60px);
+        transition:all 300ms ease;
+        .posterdProject{
+          img{
+            filter: blur(0px);
+          }
+          &::before{
+            display: none;
+          }
+        }
+        .detailCard{
+          transition: 0.5s;
+          display: none;
+        }
+        .closeButton{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px 5px;
+          position: absolute;
+          width: 100%;
+          bottom: -10px;
+          z-index: 3;
+          //background: orange;
+          transition: all 0.5s ease;
+          button.close{
+            display: flex;
+            border: none;
+            background: var(--base-contrast-primary-color);
+            color: var(--dark-grey);
+            border-radius: 50%;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+          }
+        }
+      } */
 
-      .detailCard{
+      .detailProject{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: calc(90% - 30px);
+        //background: plum;
+        padding: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 10px 5px;
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        z-index: 2;
-        //background: orange;
-        transition: all 0.5s ease;
-        .visit{
+        h1{
           display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          padding: 5px;
-          background: orange;
-          button{
-            border: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* width: 120px;
-            height: 40px; */
-            padding: 5px 15px;
-            color: var(--dark-grey);
-            background: var(--base-contrast-primary-color);
-            border-radius: 10px;
-            font-size: 15px;
-            text-align: center;
-            font-weight: 700;
-            cursor: pointer;
-          }
-        }
-        .title{
-          display: flex;
-          width: 100%;
-          justify-content: flex-start;
-          align-items: center;
-          margin: 0px;
+          width: 95%;
+          text-align: start;
           color: var(--font-color-light);
-          padding: 10px;
-          background: yellow;
-          h1{
-            border-bottom: solid 1px var(--font-color-light);
-            font-size: 25px;
-          }
+          font-size: 20px;
+          font-weight: 400;
         }
-        .detail{
+        p{
           display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          width: 100%;
-          padding: 5px;
-          background: green;
-          button{
-            border: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* width: 120px;
-            height: 40px; */
-            padding: 5px 10px;
-            color: var(--dark-grey);
-            background: var(--base-contrast-primary-color);
-            border-radius: 10px;
-            font-size: 15px;
-            text-align: center;
-            font-weight: 700;
-            cursor: pointer;
-          }
+          width: 95%;
+          text-align: start;
+          font-size: 18px;
+          font-weight: 300;
         }
-
-      }
-      /* ******** card 1 ********* */
-    }
-    &:hover .projecCard{
-      height: 150px;
-      width: 150px;
-      transition:all 300ms ease;
-      .posterdProject{
-        img{
-          filter: blur(0px);
-        }
-      }
-      .detailCard{
-        transition: 0.5s;
-        display: none;
       }
     }
   }
 }
+
+@media screen and (min-width: 800px){
+
+}
+
+
+/* #462 tarjeta comeva
+ #464 tarjeta opcion 2
+ #464 opcion
+ 01800 950
+*/
