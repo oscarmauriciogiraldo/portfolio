@@ -6,8 +6,51 @@
   justify-content: center;
   /* alineacion horizontal */
   align-items: center;
+  .bxTitle{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* alineacion vertical */
+    justify-content: center;
+    /* alineacion horizontal */
+    align-items: center;
+    h1{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    .line{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 10px 0px;
+      //background: red;
+      hr{
+        height: 8px;
+        width: 90%;
+        margin: 5px 0px;
+        /* degradado */
+        background: linear-gradient(270deg, #A07EFF -17.41%, #5451F1 59.3%);
+        border-radius: 10px;
+      }
+      hr.min{
+        height: 8px;
+        width: 50%;
+
+        background: linear-gradient(270deg, #A07EFF -17.41%, #5451F1 59.3%);
+        border-radius: 10px;
+      }
+    }
+  }
   .container{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -16,7 +59,7 @@
     position: relative;
     width: 1000px;
     //background: yellow;
-    //overflow: hidden;
+    //overflow: hidden; */
     .cardDinamic{
       display: flex;
       position: relative;
@@ -82,8 +125,8 @@
             button.close{
               display: flex;
               border: none;
-              background: var(--base-contrast-primary-color);
-              color: var(--dark-grey);
+              background: #ff387a;
+              color: var(--font-color-light);
               border-radius: 50%;
               padding: 10px;
               justify-content: center;
@@ -318,7 +361,11 @@
 }
 
 @media screen and (min-width: 800px){
+  .projectContainer{
+    .container{
 
+    }
+  }
 }
 
 
