@@ -6,6 +6,7 @@
   justify-content: center;
   /* alineacion horizontal */
   align-items: center;
+  //background: greenyellow;
   .bxTitle{
     display: flex;
     width: 100%;
@@ -14,11 +15,18 @@
     justify-content: center;
     /* alineacion horizontal */
     align-items: center;
+    //background: yellow;
+    transition: all 4s ease;
     h1{
       display: flex;
       width: 100%;
       justify-content: center;
       align-items: center;
+      font-size: 35px;
+      color: var(--font-color-light);
+      font-family: var(--font-family);
+      padding-top: 20px;
+      //background: red;
     }
     .line{
       display: flex;
@@ -29,17 +37,18 @@
       padding: 10px 0px;
       //background: red;
       hr{
-        height: 8px;
+        height: 4px;
         width: 90%;
         margin: 5px 0px;
+        border: none;
         /* degradado */
         background: linear-gradient(270deg, #A07EFF -17.41%, #5451F1 59.3%);
         border-radius: 10px;
       }
       hr.min{
-        height: 8px;
+        height: 4px;
         width: 50%;
-
+        border: none;
         background: linear-gradient(270deg, #A07EFF -17.41%, #5451F1 59.3%);
         border-radius: 10px;
       }
@@ -50,28 +59,19 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    //margin: 20px;
-    padding: 20px 40px;
     position: relative;
-    width: 1000px;
-    //background: yellow;
-    //overflow: hidden; */
     .cardDinamic{
       display: flex;
       position: relative;
-      width: 320px;
-      height: 220px;
+      width: 390px;
+      height: 280px;
       //background: #fff;
       //background: green;
-      background: var(--base-background-gradient-1);
-      margin: 30px 0px;
+      background: var(--base-background-gradient);
+      margin: 60px 0px;
       border-radius: 20px;
       box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-      //overflow: hidden;
+      align-items: center;
       .projecCard{
         position: absolute;
         //background: orange;
@@ -93,7 +93,7 @@
           height: calc(50% - 20px);
           width: calc(70% - 20px);
           left: 18%;
-          top: -50px;
+          top: -70px;
           /* height: 100px;
           width: 150px; */
           /*  left: 75px;
@@ -125,8 +125,8 @@
             button.close{
               display: flex;
               border: none;
-              background: #ff387a;
-              color: var(--font-color-light);
+              background: var(--base-background-gradient-4);
+              color: var(--base-background-gradient);
               border-radius: 50%;
               padding: 10px;
               justify-content: center;
@@ -193,7 +193,8 @@
             width: 100%;
             padding: 5px;
             //background: orange;
-            button{
+            a.button{
+              text-decoration: none;
               border: none;
               display: flex;
               justify-content: center;
@@ -332,28 +333,119 @@
       .detailProject{
         position: absolute;
         width: 100%;
-        bottom: 0;
-        height: calc(90% - 30px);
+        bottom: 10px;
+        height: calc(90% - 15px);
         //background: plum;
-        padding: 20px;
+        padding: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        h1{
+        border-radius: 20px;
+        //background: yellow;
+
+        .titleBx{
           display: flex;
-          width: 95%;
-          text-align: start;
-          color: var(--font-color-light);
-          font-size: 20px;
-          font-weight: 400;
+          width: 98%;
+          flex-direction: column;
+          justify-content: flex-start;
+          padding: 5px 0px;
+          margin-bottom: 5px;
+          //background: lightcoral;
+          h1{
+            display: flex;
+            width: 100%;
+            text-align: start;
+            color: var(--font-color-light);
+            font-size: 20px;
+            font-weight: 600;
+          }
+          hr{
+            width: 60%;
+            border: none;
+            background: var(--base-background-gradient-4);
+            height: 3px;
+            border-radius: 25px;
+          }
         }
         p{
           display: flex;
-          width: 95%;
-          text-align: start;
+          width: 98%;
+          padding: 5px 0px;
           font-size: 18px;
-          font-weight: 300;
+          font-weight: 500;
+          color: var(--font-color-light);
+          /* text-align: start;
+          font-size: 18px;
+          font-weight: 300; */
+          //background: greenyellow;
+        }
+        .list{
+          display: flex;
+          width: 98%;
+          justify-content: center;
+          align-items: center;
+          padding: 5px 0px;
+          //background: pink;
+          ul.listCarecteristic{
+            /* display: flex;
+            width: 98%;
+            flex-direction: column; */
+            width: 80%;
+            margin: 0;
+            padding: 0;
+            color: var(--font-color-light);
+            //list-style: none;
+            list-style-type: disc;
+            //display: grid;
+            //gap: 1rem;
+            //background: orange;
+            li{
+              margin: 5px 0px;
+              font-size: 18px;
+              color: var(--font-color-light);
+              font-weight: 500;
+            }
+          }
+        }
+        .icons{
+          display: flex;
+          width: 98%;
+          justify-content: space-around;
+          align-items: center;
+          //background: red;
+          .textTitle{
+            display: flex;
+            width: 60%;
+            justify-content: space-around;
+            align-items: center;
+            //background: orange;
+            i{
+              color: var(--font-color-light);
+              font-size: 20px;
+            }
+            h4{
+              color: var(--font-color-light);
+              font-size: 20px;
+              font-weight: 700;
+            }
+          }
+          .iconRepo{
+            display: flex;
+            width: 40%;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            a{
+              text-decoration: none;
+              //position: absolute;
+              color: var(--base-contrast-primary-color);
+              cursor: pointer;
+              i{
+                font-size: 40px;
+              }
+            }
+          }
         }
       }
     }
@@ -362,8 +454,27 @@
 
 @media screen and (min-width: 800px){
   .projectContainer{
+    .bxTitle{
+      h1{
+        justify-content: flex-start;
+        text-align: start;
+        font-size: 40px;
+      }
+      .line{
+        //background: red;
+        //justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0px;
+      }
+    }
     .container{
-
+      flex-direction: row;
+      flex-wrap: wrap;
+      //margin: 20px;
+      padding: 20px 40px;
+      width: 1000px;
+      //background: yellow;
+      //overflow: hidden;
     }
   }
 }
