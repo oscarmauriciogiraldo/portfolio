@@ -1,14 +1,92 @@
 .containerS{
   display: flex;
   width: 100%;
-  max-width: 1300px;
+  //max-width: 1300px;
   /* alineacion horizontal */
   justify-content: center;
   /* alineacion vertical */
   align-items: center;
-  background: orange;
+  //background: orange;
+  padding: 40px 0px;
+  .cardSkill{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    width: 320px;
+    height: 400px;
+    background: var(--base-background-gradient);
+    border-radius: 20px;
+    border-bottom-left-radius: 160px;
+    border-bottom-right-radius: 160px;
+    box-shadow: 0 10px 0 #fff,
+    inset 0 -10px 0 rgba(255, 255, 255, 0.25),
+    0 45px 0 rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    .bxIcon{
+      position: relative;
+      width: 140px;
+      height: 120px;
+      background: var(--base-primary-color);
+      //border-radius: 50%;
+      border-bottom-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+
+      box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1),
+      inset 0 -8px 0 #fff;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      //align-items: center;
+      /* a{
+        i.fa-whatsapp{
+          color: #fff;
+        }
+      } */
+      .fa-angular{
+        color: #fff;
+        position: relative;
+        font-size: 6em;
+        z-index: 10000;
+      }
+
+      .fa-html5{
+        color: #fff;
+        position: relative;
+        font-size: 6em;
+        z-index: 10000;
+      }
+      &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50px;
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        border-top-right-radius: 50px;
+        box-shadow: 15px -15px 0 15px var(--base-primary-color);
+        border: none;
+      }
+
+      &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -50px;
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        border-top-left-radius: 50px;
+        box-shadow: -15px -15px 0 15px var(--base-primary-color);
+        border: none;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 800px){
-
+  .containerS{
+    padding: 0px 0px;
+  }
 }

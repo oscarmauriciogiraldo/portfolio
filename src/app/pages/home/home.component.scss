@@ -1,5 +1,4 @@
-.skillsCompoentes,
-.projectComponet{
+.containerComponent{
   display: flex;
   width: 100%;
   /* alineacion horizontal */
@@ -7,8 +6,90 @@
   /* alineacion vertical */
   align-items: center;
   //background: red;
+  padding: 0px;
+  margin: 10px 0px;
   //padding: 5px;
   /* app-projects{
     margin: 0px;
   } */
 }
+
+.bxTitle{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  transition: all 4s ease;
+  margin: 10px  0px;
+  //background: yellow;
+  .title{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    /* alineacion vertical */
+    justify-content: center;
+    /* alineacion horizontal */
+    align-items: center;
+    //background: yellow;
+    //background: red;
+    h1{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      font-size: 35px;
+      color: var(--font-color-light);
+      font-family: var(--font-family);
+      padding-top: 10px;
+      //background: red;
+    }
+    .line{
+      display: flex;
+      width: 100%;
+      height: 15px;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      padding: 0px;
+      //background: green;
+      hr{
+        height: 3px;
+        width: 90%;
+        //margin: 5px 0px;
+        border: none;
+        /* degradado */
+        background: linear-gradient(270deg, #A07EFF -17.41%, #5451F1 59.3%);
+        border-radius: 10px;
+      }
+      hr.min{
+        height: 3px;
+        width: 50%;
+        border: none;
+        background: linear-gradient(270deg, #A07EFF -17.41%, #5451F1 59.3%);
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 800px){
+  .bxTitle{
+    .title{
+      max-width: 1200px;
+      h1{
+        justify-content: flex-start;
+        text-align: start;
+        font-size: 30px;
+        //background: orange;
+      }
+      .line{
+        //background: red;
+        //justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0px;
+      }
+    }
+  }
+}
+
