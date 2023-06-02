@@ -11,6 +11,8 @@ import { SectionBannerComponent } from './pages/home/components/section-banner/s
 import { BabyShowerComponent } from './pages/baby-shower/baby-shower.component';
 import { SkillsComponent } from './pages/home/components/skills/skills.component';
 import { ProjectsComponent } from './pages/home/components/projects/projects.component';
+import { ExperienceComponent } from './pages/home/components/experience/experience.component';
+import { ContactComponent } from './pages/home/components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ProjectsComponent } from './pages/home/components/projects/projects.com
     SectionBannerComponent,
     BabyShowerComponent,
     SkillsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ExperienceComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

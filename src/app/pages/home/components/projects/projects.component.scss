@@ -1,13 +1,3 @@
-.projectContainer{
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  /* alineacion vertical */
-  justify-content: center;
-  /* alineacion horizontal */
-  align-items: center;
-  background: greenyellow;
-}
 
 .container{
   display: flex;
@@ -23,8 +13,8 @@
   .cardDinamic{
     display: flex;
     position: relative;
-    width: 390px;
-    height: 280px;
+    width: 400px;
+    height: 290px;
     background: var(--base-background-gradient);
     margin: 40px 0px;
     border-radius: 20px;
@@ -116,8 +106,8 @@
           bottom: 0;
           width: 100%;
           height: 60%;
-          background: linear-gradient(0deg, #520092 30%, transparent);
-          //background: var(--background-gradient);
+          //background: linear-gradient(0deg, #520092 30%, transparent);
+          background: var(--card-gradient);
           transition: 0.5s;
           z-index: 1;
         }

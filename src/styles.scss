@@ -31,6 +31,7 @@
   /* gradients */
   --background-gradient: linear-gradient(135deg, rgba(142, 0, 252, 1), rgb(82, 0, 146));
   --base-background-gradient: linear-gradient(135deg, hsla(219, 83%, 54%, 1) 0%, hsla(246, 88%, 17%, 1) 100%);
+  --card-gradient: linear-gradient(0deg, #286ceb 30%, transparent);
 
   --base-background-gradient-1: linear-gradient(135deg, hsla(142, 61%, 60%, 1) 0%, hsla(189, 100%, 14%, 1) 100%);
   --base-background-gradient-3: linear-gradient(135deg, hsla(340, 100%, 61%, 1) 0%, hsla(246, 88%, 17%, 1) 100%);
@@ -61,4 +62,25 @@
 body{
   /* background: #1f242d; */
   background: var(--base-primary-color);
+}
+
+.containerCards{
+  display: flex;
+  width: 100%;
+  //max-width: 1300px;
+  /* alineacion horizontal */
+  justify-content: center;
+  /* alineacion vertical */
+  align-items: center;
+  flex-wrap: wrap;
+  //background: orange;
+  padding: 40px 0px;
+}
+
+@media screen and (min-width: 800px){
+  .containerCards{
+    padding: 0px 0px;
+    max-width: 1200px;
+    //background: red;
+  }
 }

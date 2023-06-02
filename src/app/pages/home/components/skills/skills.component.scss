@@ -1,14 +1,4 @@
-.containerS{
-  display: flex;
-  width: 100%;
-  //max-width: 1300px;
-  /* alineacion horizontal */
-  justify-content: center;
-  /* alineacion vertical */
-  align-items: center;
-  flex-wrap: wrap;
-  //background: orange;
-  padding: 40px 0px;
+.containerCards{
   .cardSkill{
     display: flex;
     flex-direction: column;
@@ -17,8 +7,8 @@
     //justify-content: center;
     //align-items: flex-start;
     position: relative;
-    width: 250px;
-    height: 350px;
+    width: 220px;
+    height: 300px;
     background: var(--base-background-gradient);
     border-radius: 20px;
     border-bottom-left-radius: 160px;
@@ -30,8 +20,8 @@
     margin: 20px 0px;
     .bxIcon{
       position: relative;
-      width: 140px;
-      height: 120px;
+      width: 130px;
+      height: 110px;
       background: var(--base-primary-color);
       //border-radius: 50%;
       border-bottom-left-radius: 100px;
@@ -42,7 +32,7 @@
       z-index: 1000;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       padding: 10px;
       /* a{
         i.fa-whatsapp{
@@ -52,28 +42,28 @@
       .fa-angular{
         color: red;
         position: relative;
-        font-size: 6em;
+        font-size: 3em;
         z-index: 10000;
       }
 
       .fa-html5{
         color: #fd6529;
         position: relative;
-        font-size: 6em;
+        font-size: 3em;
         z-index: 10000;
       }
 
       .fa-css3-alt{
         color: #0672b9;
         position: relative;
-        font-size: 6em;
+        font-size: 3em;
         z-index: 10000;
       }
 
       .fa-git{
         color: #e84e31;
         position: relative;
-        font-size: 5em;
+        font-size: 3em;
         z-index: 10000;
       }
 
@@ -81,11 +71,11 @@
         content: '';
         position: absolute;
         top: 0;
-        left: -50px;
-        width: 50px;
-        height: 50px;
+        left: -30px;
+        width: 30px;
+        height: 30px;
         background: transparent;
-        border-top-right-radius: 50px;
+        border-top-right-radius: 30px;
         box-shadow: 15px -15px 0 15px var(--base-primary-color);
         border: none;
       }
@@ -94,11 +84,11 @@
         content: '';
         position: absolute;
         top: 0;
-        right: -50px;
-        width: 50px;
-        height: 50px;
+        right: -30px;
+        width: 30px;
+        height: 30px;
         background: transparent;
-        border-top-left-radius: 50px;
+        border-top-left-radius: 30px;
         box-shadow: -15px -15px 0 15px var(--base-primary-color);
         border: none;
       }
@@ -125,9 +115,7 @@
 }
 
 @media screen and (min-width: 800px){
-  .containerS{
-    padding: 0px 0px;
-    max-width: 1200px;
+  .containerCards{
     .cardSkill{
       margin: 30px 20px;
     }
