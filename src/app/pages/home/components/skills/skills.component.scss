@@ -6,15 +6,19 @@
   justify-content: center;
   /* alineacion vertical */
   align-items: center;
+  flex-wrap: wrap;
   //background: orange;
   padding: 40px 0px;
   .cardSkill{
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    //justify-content: center;
+    //align-items: flex-start;
     position: relative;
-    width: 320px;
-    height: 400px;
+    width: 250px;
+    height: 350px;
     background: var(--base-background-gradient);
     border-radius: 20px;
     border-bottom-left-radius: 160px;
@@ -23,6 +27,7 @@
     inset 0 -10px 0 rgba(255, 255, 255, 0.25),
     0 45px 0 rgba(0, 0, 0, 0.15);
     overflow: hidden;
+    margin: 20px 0px;
     .bxIcon{
       position: relative;
       width: 140px;
@@ -37,25 +42,41 @@
       z-index: 1000;
       display: flex;
       justify-content: center;
-      //align-items: center;
+      align-items: center;
+      padding: 10px;
       /* a{
         i.fa-whatsapp{
           color: #fff;
         }
       } */
       .fa-angular{
-        color: #fff;
+        color: red;
         position: relative;
         font-size: 6em;
         z-index: 10000;
       }
 
       .fa-html5{
-        color: #fff;
+        color: #fd6529;
         position: relative;
         font-size: 6em;
         z-index: 10000;
       }
+
+      .fa-css3-alt{
+        color: #0672b9;
+        position: relative;
+        font-size: 6em;
+        z-index: 10000;
+      }
+
+      .fa-git{
+        color: #e84e31;
+        position: relative;
+        font-size: 5em;
+        z-index: 10000;
+      }
+
       &::before{
         content: '';
         position: absolute;
@@ -82,11 +103,33 @@
         border: none;
       }
     }
+    .content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      height: 300px;
+      //background: red;
+      margin-top: 10px;
+      color: var(--font-color-light);
+      h2{
+        margin: 5px 0px;
+        font-weight: 800;
+      }
+      p{
+        font-weight: 800;
+        text-align: justify;
+      }
+    }
   }
 }
 
 @media screen and (min-width: 800px){
   .containerS{
     padding: 0px 0px;
+    max-width: 1200px;
+    .cardSkill{
+      margin: 30px 20px;
+    }
   }
 }
