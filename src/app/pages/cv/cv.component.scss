@@ -24,40 +24,62 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        padding-top: 10px;
         padding-bottom: 20px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        //background: red;
         .imgBx{
-          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: end;
           width: 210px;
           height: 210px;
           border-radius: 50%;
           overflow: hidden;
+          background: #fff;
+          position: relative;
+          /*
+
+
           img {
-            position: absolute;
-            top: 0;
+            //position: absolute;
+            bottom: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
+            ;
+          } */
+          img{
+            /* top: 0;
+            left: 0; */
+            //height: 100%;
+            bottom: -70px;
+            width: 95%;
             object-fit: cover;
+            position: absolute;
+            //transform: translateY(-10);
           }
         }
         h2 {
           color: #fff;
-          font-size: 1.5em;
+          font-size: 1.2em;
           margin-top: 20px;
           text-transform: uppercase;
           text-align: center;
           font-weight: 600;
           line-height: 1.4em;
           // tarjeta profesional
-          span{
-            font-size: 0.8em;
-            font-weight: 300;
-          }
+
+        }
+        span{
+          font-size: 1.1em;
+          font-weight: 300;
+          line-height: .5em;
+          margin-top: 10px;
+          color: #fff;
         }
         h5 {
           color: #fff;
-          font-size: 1em;
+          font-size: 1.1em;
           margin-top: 20px;
           text-transform: uppercase;
           text-align: center;
@@ -142,12 +164,12 @@
       position: relative;
       background: #fff;
       padding: 40px;
-      /* .about{
+
+      .about{
         margin-bottom: 50px;
         &:last-child{
           margin-bottom: 0;
         }
-
         p{
           color: #333;
         }
@@ -188,6 +210,11 @@
             }
           }
         }
+      }
+      /*
+
+
+
       } */
       .aboutSkills {
         background: transparent;
