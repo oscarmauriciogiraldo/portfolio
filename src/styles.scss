@@ -6,7 +6,21 @@
 :root{
 
   /* ************** BASE COLORS ************** */
-  --prelude-50: #f8f7fb;
+  --prelude-50: #f2f8f9;
+  --prelude-100: #dfeeee;
+  --prelude-200: #c3ddde;
+  --prelude-300: #99c4c7;
+  --prelude-400: #67a3a9;
+  --prelude-500: #4c878e;
+  --prelude-600: #427078;
+  --outer-space-700: #3a5d64;
+  --outer-space-800: #364e54;
+  --outer-space-900: #304349;
+  --bs-first-color: #1f2f34;
+
+
+
+  /* --prelude-50: #f8f7fb;
   --prelude-100: #f2f0f7;
   --prelude-200: #e8e2f2;
   --prelude-300: #d6cbe7;
@@ -16,7 +30,7 @@
   --prelude-700: #845fa2;
   --prelude-800: #6e4f88;
   --prelude-900: #5c4270;
-  --bs-first-color: #3b2a4b;
+  --bs-first-color: #3b2a4b; */
 
 
   /* ----------------------------------------- */
@@ -66,6 +80,11 @@
   font-family: 'Allura', cursive;
   font-family: 'Dancing Script', cursive;
   font-family: 'Parisienne', cursive; */
+
+   /* **************** Margenes **************** */
+  --mb-1: .5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
 }
 
 * {
